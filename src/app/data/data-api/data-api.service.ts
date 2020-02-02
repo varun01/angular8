@@ -14,7 +14,7 @@ export class DataApiService {
   }
 
   public getData=(): Observable<any> =>{
-    return this.httpClient.get<any>(environment.api.getDistricts).pipe(map(response => {
+    return this.httpClient.get<any>(environment.api.users).pipe(map(response => {
       return response;
     }));
   }

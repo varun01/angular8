@@ -1,1 +1,9 @@
 <p>city works!</p>
+
+<button (click)="callServiceMethod()">Call Me!</button>
+
+<div>
+    <div *ngFor="let dt of data.data"> 
+        <p> {{dt.email}}</p>
+    </div>
+</div>
